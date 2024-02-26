@@ -46,8 +46,10 @@ public class MainApp {
             System.out.println();
         }
 
-        System.out.printf("The car \"%s\" belongs to a %s\n", tesla.getModel(),
-                userService.getUserByCar(tesla.getModel()).getFirstName());
+        String model = tesla.getModel();
+
+        System.out.printf("The car \"%s\" belongs to a %s\n", model,
+                userService.getUserByCar(model).getFirstName());
 
         context.close();
     }
