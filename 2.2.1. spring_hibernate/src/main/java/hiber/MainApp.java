@@ -33,7 +33,7 @@ public class MainApp {
         userService.add(user1);
         userService.add(user4);
 
-        userService.listUsers().forEach(System.out::println);
+        userService.listUsers().forEach(user -> System.out.println(user + ": " + user.getUserCar().toString()));
 
         String model = tesla.getModel();
 
