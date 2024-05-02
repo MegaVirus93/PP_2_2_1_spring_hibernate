@@ -71,7 +71,9 @@ public class User {
 
     public void setUserCar(Car car) {
         userCar = car;
-        userCar.setUser(this);
+        if (userCar != null) {
+            userCar.setUser(this);
+        }
     }
 
     @Override
